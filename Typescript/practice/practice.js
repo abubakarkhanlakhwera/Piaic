@@ -32,19 +32,24 @@
 //console.log(popedup);
 //fruites.splice(1,0,"lemon","kella");
 //console.log(fruites);
-for (var i_1 = 0; i_1 <= 5; i_1++) {
-    console.log("its lovely");
-}
-var cleanestcities = ['karachi', 'lahore', 'peshawar', 'Islamabad'];
-var i = 0;
-var matchfound = false;
-for (i = 0; i <= 4; i++) {
-    if ("Islamabad" === cleanestcities[i]) {
-        console.log("it is one of the cleanest cities");
-        matchfound = true;
-        break;
-    }
-}
-if (matchfound === false) {
-    console.log("No cleanest cities found");
-}
+//for(let i=0 ; i<=5 ; i++){
+// console.log("its lovely");
+//}
+//const cleanestcities = [ 'karachi','lahore','peshawar','Islamabad'];
+//let i = 0;
+//let matchfound = false ;
+//for(i = 0 ; i<=4 ; i++){
+//if("Islamabad" === cleanestcities[i]){
+//console.log("it is one of the cleanest cities");
+//matchfound = true;
+//break;
+//}
+//}
+//if(matchfound === false ){
+//console.log("No cleanest cities found");
+//}
+var stdnaame = "ALi";
+var age = 27;
+var pass = true;
+var student = { name: "ali", age: 2, pass: true };
+console.log(student);
