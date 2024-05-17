@@ -49,8 +49,83 @@
 //if(matchfound === false ){
   //console.log("No cleanest cities found");
 //}
-let stdnaame = "ALi";
-let age = 27;
-let pass = true;
-let student = {name : "ali",age : 2 , pass : true};
-console.log(student)
+//let stdnaame = "ALi";
+//let age = 27;
+//let pass = true;
+//let student = {name : "ali",age : 2 , pass : true};
+//console.log(student)
+//let myage : string | number;
+//myage = 16;
+//myage.toFixed();
+//myage = 'hello';
+//console.log(myage);
+//myage;
+//myage.toLowerCase();
+//let a =45;
+//let result= a>45?"Pass":"Fail"
+//console.log(result);
+//console.log(Math.random());
+//let newAge = Math.random() > 0.6 ? "Khan":60;
+///newAge;
+//type Id = number | string;
+//type Idmaybe = Id | null;
+// function myFan(){
+//   console.log("hwa dena");
+//   console.log('hwa start')
+// }
+// myFan();
+
+// function mysum(){
+//   let a = 10;
+//   let b = 20;
+//   let sum = a + b;
+//   console.log(sum)
+// }
+// mysum();
+// function forecCalc(){
+//   let m = 10;
+//   let a = 20 ;
+//   let force = m*a;
+//   console.log(`Force = ${force}Newton`)
+// }
+// forecCalc();
+// //User input
+// function myUserInputSum(){
+//   let x = Number(prompt("Enter first number"));
+//   let y = Number(prompt('Enter second number'));
+//   let  sum = x+y;
+//   console.log(sum);
+// }
+
+// myUserInputSum(x,y);
+//return
+// function mySum(){
+//     let a = 7 //Number(prompt("Enter first number: "));
+//     let b = 6//Number(prompt("Enter second number: "));
+//     let sum = a+b;
+//     //console.log(sum);
+//     return sum;
+// }
+// console.log(mySum());
+// function greeting(str:string,Name:string){
+//   return str + Name;
+// }
+// let greet = greeting('hello','Ahmad');
+// console.log(greet);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
