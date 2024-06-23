@@ -73,8 +73,52 @@
 
 /////////////////////////////////////////////////////////////////////////////////////
 
- let btn = document.querySelector('button');
+//  let btn = document.querySelector('button');
 
- btn.addEventListener("click",function(){
-    console.log("Buttu")
- })
+//  btn.addEventListener("click",function(event){
+//     console.log(event);
+//     console.log("Buttun is clicked ");
+//  });
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// let input = document.querySelector('input');
+// input.addEventListener("keydown",function(event){
+//     console.log("code =",event.code);
+//     if(event.code == "ArrowUp"){
+//         console.log("Character moves forward");
+//     }else if(event.code == "ArrowDown"){
+//         console.log("Character moves backwards");
+//     }else if(event.code == "ArrowLeft"){
+//         console.log("Character moves left");
+//     }else if(event.code == "ArrowRight"){
+//         console.log("Character move right");
+//     }
+// });
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+// let form = document.querySelector('form');
+
+// form.addEventListener("submit",function(event){
+//     event.preventDefault();
+//     alert("HI!");
+// });
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+let form = document.querySelector('form');
+
+form.addEventListener("submit",function(event){
+    event.preventDefault();
+    let user = document.querySelector('#user');
+    let pass = document.querySelector('#pass');
+
+    console.log(user.value);
+    console.log(pass.value);
+    alert(`Hi there your password is "${pass.value}" "with username "${user.value}"`);
+    // let inp = document.querySelector("input");
+    // console.dir(inp);
+});
+
+
