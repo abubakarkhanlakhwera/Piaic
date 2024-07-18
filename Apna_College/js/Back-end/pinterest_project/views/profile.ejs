@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.username {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e60023;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #c4001a;
+}
+
+
+    </style>
+    <style>
+        /* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e60023;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #c4001a;
+}
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* .upload-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.file-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #e60023;
+    border-radius: 8px;
+    width: 40%;
+    max-width: 300px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.file-input:hover {
+    border-color: #d0001f;
+}
+
+.file-input::file-selector-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e60023;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-input::file-selector-button:hover {
+    background-color: #d0001f;
+}
+
+.upload-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #e60023;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 40%;
+    max-width: 300px;
+}
+
+.upload-button:hover {
+    background-color: #d0001f;
+}
+
+
+    </style>
+    
+    <div class="card">
+        <div class="profile-picture">
+            <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="profile-picture">
+        </div>
+        <h3 class="name"><%= user.fullname %></h3>
+        <h3 class="username">@<%= user.username %></h3>
+        <p class="tagline">Some tagline</p>
+        <p class="description">some description</p>
+        <a href="/logout" class="button"> Logout</a>
+        
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="fileInput" class="file-input">
+                <input type="text" name="filecaption" placeholder="some caption">
+                <button type="submit" class="upload-button">Upload</button>
+            </form>
+        
+    </div>
+    <div class="profile-card">
+        <div class="profile-picture">
+            <img src="https://images.unsplash.com/photo-1718554517780-b9ca6513c4c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <a href="#">All design</a>
+</body>
+</html>
