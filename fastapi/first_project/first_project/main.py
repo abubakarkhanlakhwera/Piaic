@@ -1,15 +1,26 @@
-from typing import Union
-
 from fastapi import FastAPI
 
 app = FastAPI()
 
-
 @app.get("/")
-def read_root():
-    return {"Hello Codanics Youtube": "World"}
+def helloWorld():
+    return "Hello, World!"
 
+@app.get("/gettodos/{id}")
+def getTodos(id: int):  # Specify the type of 'id'
+    print("Get todos called", id)
+    return id
 
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+@app.post("/gettodos")
+def getTodosPost():
+    print("Post method called")
+    return "Post method called"
+
+@app.put("/getSingleTodo")
+def getSingleTodo(userName: str, rollno: int):
+    return f"This is my username {userName} and this is my rollno {rollno}"
+
+@app.put("/updateTodo")
+def updateTodo():
+    return "updateTodo called"
+
