@@ -72,7 +72,7 @@ name = "Sunshine"
 print(name)
 
 # This will cause a NameError:
-print(sunsine)  # Incorrect variable name
+print(sunsine)  # Incorrect variable name intensional
 
 # Store and print a city name
 city = "New York City"
